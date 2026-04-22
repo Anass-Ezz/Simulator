@@ -1,0 +1,174 @@
+{
+  "energy_registry": {
+    "2_1": 7703.215062049641,
+    "3_1": 9871.067947626238,
+    "3_2": 3688.68154910378,
+    "6_1": 9410.886768627597,
+    "8_1": 2743.224386100662,
+    "8_2": 1840.5417663604753,
+    "9_1": 2237.2922079795153,
+    "5_1": 9362.725609009358,
+    "5_2": 8078.953413959554,
+    "4_1": 7942.919502149264,
+    "4_2": 2835.335263401783,
+    "7_1": 5856.993218113289
+  },
+  "active_session": [
+    {
+      "unit_id": 2,
+      "meter_type": "I-35",
+      "loads": [
+        {
+          "load_number": 1,
+          "max_power_w": 10000000.0,
+          "max_reactive_var": 10000,
+          "power_setpoint_w": 10000000.0,
+          "reactive_setpoint_var": 0.0,
+          "simulate_jitter": false,
+          "energy_kwh": 7703.215062049641
+        }
+      ]
+    },
+    {
+      "unit_id": 3,
+      "meter_type": "I-60",
+      "loads": [
+        {
+          "load_number": 1,
+          "max_power_w": 10000,
+          "max_reactive_var": 10000,
+          "power_setpoint_w": 0.0,
+          "reactive_setpoint_var": 0.0,
+          "simulate_jitter": false,
+          "energy_kwh": 9871.067947626238
+        },
+        {
+          "load_number": 2,
+          "max_power_w": 10000,
+          "max_reactive_var": 10000,
+          "power_setpoint_w": 0.0,
+          "reactive_setpoint_var": 0.0,
+          "simulate_jitter": false,
+          "energy_kwh": 3688.68154910378
+        }
+      ]
+    },
+    {
+      "unit_id": 6,
+      "meter_type": "I-30",
+      "loads": [
+        {
+          "load_number": 1,
+          "max_power_w": 10000,
+          "max_reactive_var": 10000,
+          "power_setpoint_w": 0.0,
+          "reactive_setpoint_var": 0.0,
+          "simulate_jitter": false,
+          "energy_kwh": 9410.886768627597
+        }
+      ]
+    },
+    {
+      "unit_id": 8,
+      "meter_type": "I-60",
+      "loads": [
+        {
+          "load_number": 1,
+          "max_power_w": 10000,
+          "max_reactive_var": 10000,
+          "power_setpoint_w": 0.0,
+          "reactive_setpoint_var": 0.0,
+          "simulate_jitter": false,
+          "energy_kwh": 2743.224386100662
+        },
+        {
+          "load_number": 2,
+          "max_power_w": 10000,
+          "max_reactive_var": 10000,
+          "power_setpoint_w": 0.0,
+          "reactive_setpoint_var": 0.0,
+          "simulate_jitter": false,
+          "energy_kwh": 1840.5417663604753
+        }
+      ]
+    },
+    {
+      "unit_id": 9,
+      "meter_type": "I-30",
+      "loads": [
+        {
+          "load_number": 1,
+          "max_power_w": 10000,
+          "max_reactive_var": 10000,
+          "power_setpoint_w": 0.0,
+          "reactive_setpoint_var": 0.0,
+          "simulate_jitter": false,
+          "energy_kwh": 2237.2922079795153
+        }
+      ]
+    },
+    {
+      "unit_id": 5,
+      "meter_type": "I-60",
+      "loads": [
+        {
+          "load_number": 1,
+          "max_power_w": 10000,
+          "max_reactive_var": 10000,
+          "power_setpoint_w": 0.0,
+          "reactive_setpoint_var": 0.0,
+          "simulate_jitter": false,
+          "energy_kwh": 9362.725609009358
+        },
+        {
+          "load_number": 2,
+          "max_power_w": 10000,
+          "max_reactive_var": 10000,
+          "power_setpoint_w": 0.0,
+          "reactive_setpoint_var": 0.0,
+          "simulate_jitter": false,
+          "energy_kwh": 8078.953413959554
+        }
+      ]
+    },
+    {
+      "unit_id": 4,
+      "meter_type": "I-60",
+      "loads": [
+        {
+          "load_number": 1,
+          "max_power_w": 10000,
+          "max_reactive_var": 10000,
+          "power_setpoint_w": 0.0,
+          "reactive_setpoint_var": 0.0,
+          "simulate_jitter": false,
+          "energy_kwh": 7942.919502149264
+        },
+        {
+          "load_number": 2,
+          "max_power_w": 10000,
+          "max_reactive_var": 10000,
+          "power_setpoint_w": 0.0,
+          "reactive_setpoint_var": 0.0,
+          "simulate_jitter": false,
+          "energy_kwh": 2835.335263401783
+        }
+      ]
+    },
+    {
+      "unit_id": 7,
+      "meter_type": "I-30",
+      "loads": [
+        {
+          "load_number": 1,
+          "max_power_w": 10000,
+          "max_reactive_var": 10000,
+          "power_setpoint_w": 0.0,
+          "reactive_setpoint_var": 0.0,
+          "simulate_jitter": false,
+          "energy_kwh": 5856.993218113289
+        }
+      ]
+    }
+  ]
+}
