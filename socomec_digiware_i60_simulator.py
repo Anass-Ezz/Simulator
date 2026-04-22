@@ -579,14 +579,14 @@ class SimulatorGUI:
                     "max_reactive_var": load.max_reactive_var,
                     "power_setpoint_w": load.power_setpoint_w,
                     "reactive_setpoint_var": load.reactive_setpoint_var,
-                    "simulate_jitter": load.simulate_jitter,
-                    "energy_kwh": load.energy_kwh
+                    "simulate_jitter": load.simulate_jitter
+                    # 'energy_kwh' excluded: profiles are structural templates only
                 })
             data["meters"].append(m_data)
 
         with open(path, "w") as f:
             json.dump(data, f, indent=2)
-        print(f"Profile saved: {path}")
+        print(f"Profile saved (template only): {path}")
 
     def _load_profile(self):
         path = filedialog.askopenfilename(
@@ -611,7 +611,12 @@ class SimulatorGUI:
             self.meters[uid] = I60Meter(uid, m_type)
             for l_data in m_data["loads"]:
                 ln = l_data["load_number"]
-                self.meters[uid].add_load(ln, l_data.get("energy_kwh", 0.0))
+                
+                # IMPORTANT: Profiles only define Structure. 
+                # Energy always comes from the persistent global registry.
+                energy = self.energy_cache.get(f"{uid}_{ln}", 0.0)
+                
+                self.meters[uid].add_load(ln, energy)
                 load = self.meters[uid].get_load(ln)
                 load.max_power_w = l_data.get("max_power_w", 10000)
                 load.max_reactive_var = l_data.get("max_reactive_var", 10000)
@@ -621,7 +626,7 @@ class SimulatorGUI:
 
         self._refresh_meters_display()
         self._restart_server()
-        print(f"Profile loaded: {path}")
+        print(f"Profile template loaded (Energy retrieved from registry): {path}")
 
     # ── Widget construction ───────────────────────────────────────────────────
 
